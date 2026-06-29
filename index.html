@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trivia de Ciencias: El Plástico y los Animales</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Trivia Salvaje: Plástico vs. Animales</h1>
+        <p>Feria de Ciencias: Impacto Estadístico y Biológico en la Fauna Mundial</p>
+        <div class="score-badge">Puntuación: <span id="current-score">0</span> / 7</div>
+    </header>
+
+    <main class="quiz-container">
+        
+        <div class="question-card" id="q1">
+            <div class="stat-box">
+                <strong>Análisis de Probabilidad:</strong> Estudios biológicos indican que una tortuga marina tiene un 22% de probabilidad de morir si ingiere una sola pieza de plástico, debido a la obstrucción o perforación de su sistema digestivo.
+            </div>
+            <div class="question-text">
+                1. Si un grupo de científicos examina a 150 tortugas marinas que han ingerido una pieza de plástico, calculando estadísticamente el riesgo (22%), ¿cuántas de ellas se estima que perderían la vida?
+            </div>
+            <div class="options-list">
+                <button class="option-btn" onclick="checkAnswer(1, 'C', this)">A) 15 tortugas</button>
+                <button class="option-btn" onclick="checkAnswer(1, 'C', this)">B) 50 tortugas</button>
+                <button class="option-btn" onclick="checkAnswer(1, 'C', this)">C) 33 tortugas</button>
+                <button class="option-btn" onclick="checkAnswer(1, 'C', this)">D) 22 tortugas</button>
+            </div>
+            <div class="feedback" id="feedback-1"></div>
+        </div>
+
+        <div class="question-card" id="q2">
+            <div class="stat-box">
+                <strong>Proyección Porcentual:</strong> Actualmente se calcula que el 90% de las aves marinas vivas en el planeta han ingerido y tienen algún tipo de plástico atrapado en sus estómagos.
+            </div>
+            <div class="question-text">
+                2. Si en una isla protegida habita una colonia de 8,000 aves marinas, ¿cuántas de ellas se estima numéricamente que ya albergan residuos plásticos en su organismo?
+            </div>
+            <div class="options-list">
+                <button class="option-btn" onclick="checkAnswer(2, 'B', this)">A) 800 aves</button>
+                <button class="option-btn" onclick="checkAnswer(2, 'B', this)">B) 7,200 aves</button>
+                <button class="option-btn" onclick="checkAnswer(2, 'B', this)">C) 4,000 aves</button>
+                <button class="option-btn" onclick="checkAnswer(2, 'B', this)">D) 6,500 aves</button>
+            </div>
+            <div class="feedback" id="feedback-2"></div>
+        </div>
+
+        <div class="question-card" id="q3">
+            <div class="stat-box">
+                <strong>Masa de Residuos Gastados:</strong> Las ballenas filtradoras tragan toneladas de agua al día. En varias necropsias se han hallado registros alarmantes; el récord trágico lo tiene una ballena encontrada con 40 kg de bolsas plásticas en su estómago.
+            </div>
+            <div class="question-text">
+                3. Una bolsa de supermercado pesa unos 5 gramos (0.005 kg). ¿A cuántas bolsas de plástico equivale la masa total de 40 kg encontrada en el estómago de esa ballena?
+            </div>
+            <div class="options-list">
+                <button class="option-btn" onclick="checkAnswer(3, 'D', this)">A) 800 bolsas</button>
+                <button class="option-btn" onclick="checkAnswer(3, 'D', this)">B) 4,000 bolsas</button>
+                <button class="option-btn" onclick="checkAnswer(3, 'D', this)">C) 2,000 bolsas</button>
+                <button class="option-btn" onclick="checkAnswer(3, 'D', this)">D) 8,000 bolsas</button>
+            </div>
+            <div class="feedback" id="feedback-3"></div>
+        </div>
+
+        <div class="question-card" id="q4">
+            <div class="stat-box">
+                <strong>Estadística de Pesca Fantasma:</strong> Las redes de pesca plásticas abandonadas en el mar (redes fantasma) matan a miles de animales al año. Se calcula que el 10% de toda la basura marina del planeta está compuesta por estas redes flotantes.
+            </div>
+            <div class="question-text">
+                4. Si un océano específico acumula una masa estimada de 120,000 toneladas de basura flotante, ¿cuántas toneladas corresponden puramente a redes plásticas abandonadas?
+            </div>
+            <div class="options-list">
+                <button class="option-btn" onclick="checkAnswer(4, 'A', this)">A) 12,000 toneladas</button>
+                <button class="option-btn" onclick="checkAnswer(4, 'A', this)">B) 1,200 toneladas</button>
+                <button class="option-btn" onclick="checkAnswer(4, 'A', this)">C) 120 toneladas</button>
+                <button class="option-btn" onclick="checkAnswer(4, 'A', this)">D) 60,000 toneladas</button>
+            </div>
+            <div class="feedback" id="feedback-4"></div>
+        </div>
+
+        <div class="question-card" id="q5">
+            <div class="stat-box">
+                <strong>Análisis de Densidad:</strong> En estudios de biología marina, se detectó que en ciertas zonas costeras, 1 de cada 4 peces capturados para consumo humano ya contiene partículas microplásticas en sus tejidos.
+            </div>
+            <div class="question-text">
+                5. Al expresar esta estadística comercial como una fracción o razón matemática, ¿qué porcentaje de peces está afectado en dicha zona costera?
+            </div>
+            <div class="options-list">
+                <button class="option-btn" onclick="checkAnswer(5, 'B', this)">A) 10%</button>
+                <button class="option-btn" onclick="checkAnswer(5, 'B', this)">B) 25%</button>
+                <button class="option-btn" onclick="checkAnswer(5, 'B', this)">C) 40%</button>
+                <button class="option-btn" onclick="checkAnswer(5, 'B', this)">D) 50%</button>
+            </div>
+            <div class="feedback" id="feedback-5"></div>
+        </div>
+
+        <div class="question-card" id="q6">
+            <div class="stat-box">
+                <strong>Fauna Terrestre y Vertederos:</strong> Los animales terrestres (vacas, camellos, ciervos) confunden los empaques plásticos con alimento en vertederos abiertos. En los Emiratos Árabes, los veterinarios descubrieron que el plástico causa el 50% de las muertes de camellos en ciertas regiones.
+            </div>
+            <div class="question-text">
+                6. Si en un estudio veterinario regional se analiza la muerte de 68 camellos, ¿cuántos fallecieron directamente debido a la acumulación de masas de plástico indigestas (policalcitis) en sus estómagos?
+            </div>
+            <div class="options-list">
+                <button class="option-btn" onclick="checkAnswer(6, 'A', this)">A) 34 camellos</button>
+                <button class="option-btn" onclick="checkAnswer(6, 'A', this)">B) 50 camellos</button>
+                <button class="option-btn" onclick="checkAnswer(6, 'A', this)">C) 18 camellos</button>
+                <button class="option-btn" onclick="checkAnswer(6, 'A', this)">D) 12 camellos</button>
+            </div>
+            <div class="feedback" id="feedback-6"></div>
+        </div>
+
+        <div class="question-card" id="q7">
+            <div class="stat-box">
+                <strong>Biodiversidad en Riesgo:</strong> Los registros de la ONU muestran que el número de especies de animales afectadas negativamente por el plástico marino (por enredos o ingesta) aumentó drásticamente de 260 especies en 1997 a unas 800 especies en estudios recientes.
+            </div>
+            <div class="question-text">
+                7. Si restamos los valores históricos, ¿cuántas nuevas especies de animales han sido agregadas a la lista oficial de afectados por culpa del plástico en este período?
+            </div>
+            <div class="options-list">
+                <button class="option-btn" onclick="checkAnswer(7, 'C', this)">A) 640 especies</button>
+                <button class="option-btn" onclick="checkAnswer(7, 'C', this)">B) 400 especies</button>
+                <button class="option-btn" onclick="checkAnswer(7, 'C', this)">C) 540 especies</button>
+                <button class="option-btn" onclick="checkAnswer(7, 'C', this)">D) 300 especies</button>
+            </div>
+            <div class="feedback" id="feedback-7"></div>
+        </div>
+
+        <div style="text-align: center; margin-top: 20px;">
+            <button class="reset-btn" onclick="resetQuiz()">Reiniciar Trivia</button>
+        </div>
+
+    </main>
+
+    <footer>
+        <p>© 2026 - Proyecto de Ciencias Escolar | Estudio Estadístico del Impacto Ambiental en la Fauna</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
